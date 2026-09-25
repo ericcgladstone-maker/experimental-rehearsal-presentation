@@ -1,0 +1,9 @@
+# Cloudflare Workers Static Assets, asset-only (no Worker script), like the Sandia presentation.
+# Deploy with:  npx wrangler deploy   (from this folder)
+# Serves at https://experimentalrehearsal.eric-c-gladstone.workers.dev
+name = "experimentalrehearsal"
+compatibility_date = "2026-09-25"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
