@@ -494,3 +494,6 @@ body.paused .beat.prev:hover,body.paused .beat.past:hover{opacity:.85;filter:non
 /* ======================= Embedded (?embed=1): fill the frame, no floating edge ======================= */
 body.embed{align-items:stretch;justify-content:stretch}
 body.embed .screen{width:100vw;height:100vh;box-shadow:none;border-radius:0}
+/* embedded on graystoneindustries.co: the site's navy instead of near-black, so the frame sits in the page like the Sandia deck.
+   The terminal stays a distinct, slightly lighter panel; Claude's orange and green are unchanged. */
+body.embed{--page:#051521;--ground:#051521;--t-bg:#0B2133}

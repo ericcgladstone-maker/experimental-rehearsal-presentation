@@ -1,6 +1,6 @@
-# Experimental rehearsal: auditing a field-experiment proposal
+# Auditing a field-experiment proposal with an AI agent
 
-Eric Gladstone · research walkthrough · independent work · September 2026
+Eric Gladstone · research walkthrough · independent work · September 2026. The presentation's own header reads "Experimental rehearsal · Proposal audit".
 
 A real Claude Code session, presented as it was worked through. The Claude Code console is on the left and my commentary is on the right. The session reviews a proposed field experiment in 23 steps. It starts by reconstructing what the proposal commits to. It then audits assignment, measurement, timing, precision and cost. Next it rehearses possible results before any data exist, simulates worlds the design cannot tell apart, repairs the design, and retests the repair. It ends with a funding decision under stated conditions.
 
