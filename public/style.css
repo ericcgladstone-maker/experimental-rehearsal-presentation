@@ -497,3 +497,12 @@ body.embed .screen{width:100vw;height:100vh;box-shadow:none;border-radius:0}
 /* embedded on graystoneindustries.co: the site's navy instead of near-black, so the frame sits in the page like the Sandia deck.
    The terminal stays a distinct, slightly lighter panel; Claude's orange and green are unchanged. */
 body.embed{--page:#051521;--ground:#051521;--t-bg:#0B2133}
+
+/* Opening screens: the left side is sparse, so the prose gets more of the width (same type size as before, fewer lines) */
+body.prelude .stage{grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr)}
+body.prelude #prose .why p{font-size:calc(max(16px,1.24cqw) * var(--k,1));max-width:62ch}
+body.prelude #prose h1{font-size:calc(max(26px,2.06cqw) * var(--k,1))}
+/* the wider prose column reaches over the control bar; it has nothing clickable, so clicks pass through to the controls */
+body.prelude #prose{pointer-events:none}
+/* the introduction's short lines wrap rather than clip in the narrower left column (the disclosure line must stay whole) */
+.prel.intro .pl.tree{white-space:normal}
