@@ -506,3 +506,11 @@ body.prelude #prose h1{font-size:calc(max(26px,2.06cqw) * var(--k,1))}
 body.prelude #prose{pointer-events:none}
 /* the introduction's short lines wrap rather than clip in the narrower left column (the disclosure line must stay whole) */
 .prel.intro .pl.tree{white-space:normal}
+
+/* "The problem" card (2026-09-29): a long page-authored card steps down a size, keeps its indents, and wraps a line that
+   still does not fit under its own indent. Scoped to cards of 20+ lines, so the other openings keep their size. */
+.prel.intro:has(> .pl:nth-child(20)) .pl{font-size:max(12.5px,1.62cqi);line-height:1.55;max-width:none}
+.prel.intro:has(> .pl:nth-child(20)) .pl.tree{white-space:pre-wrap;padding-left:4ch;text-indent:-4ch}
+.prel.intro:has(> .pl:nth-child(20)) .pl.gap{height:.9em}
+.prel.intro:has(> .pl:nth-child(20)) .pl{line-height:1.42;font-size:max(12px,1.55cqi)}
+.prel.intro:has(> .pl:nth-child(20)) .pl.gap{height:.55em}
