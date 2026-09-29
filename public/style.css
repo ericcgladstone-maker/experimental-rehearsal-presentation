@@ -514,3 +514,4 @@ body.prelude #prose{pointer-events:none}
 .prel.intro:has(> .pl:nth-child(20)) .pl.gap{height:.9em}
 .prel.intro:has(> .pl:nth-child(20)) .pl{line-height:1.42;font-size:max(12px,1.55cqi)}
 .prel.intro:has(> .pl:nth-child(20)) .pl.gap{height:.55em}
+.prel.intro:has(> .pl:nth-child(20)) .pl.big{font-size:clamp(24px,2.1vw,34px);line-height:1.25}
